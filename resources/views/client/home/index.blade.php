@@ -10,8 +10,8 @@
         <div class="row justify-content-center mb-4">
           <div class="col-md-8 text-center">
             <h1>We Love To Build <span class="typed-words"></span></h1>
-            <p class="lead mb-5">Free Web Template by <a href="#" target="_blank">Colorlib</a></p>
-            <div><a data-fancybox data-ratio="2" href="https://vimeo.com/317571768" class="btn btn-primary btn-md">{{__('user.watch-video')}}</a></div>
+            <p class="lead mb-5">Tận Tâm Phục Vụ Khách Hàng</p>
+            <div><a data-fancybox data-ratio="2" href="https://www.youtube.com/watch?v=15NzkVVTHRw" class="btn btn-primary btn-md">{{__('user.watch-video')}}</a></div>
           </div>
         </div>
 
@@ -24,8 +24,8 @@
   <div class="container">
     <div class="row mb-5 justify-content-center">
       <div class="col-md-8 text-center">
-        <h2 class="text-black h1 site-section-heading text-center">{{__('user.our products')}}</h2>
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, itaque neque, delectus odio iure explicabo.</p>
+        <h2 class="text-black pt-4 h1 site-section-heading text-center">{{__('user.our products')}}</h2>
+        <p class="lead">Phát triển bám sát theo đúng yêu cầu thực tế từ phía khách hàng, giao diện đơn giản, linh hoạt trong quá trình sử dụng, tối ưu hóa quản lý, tiết kiệm chi phí.</p>
       </div>
     </div>
   </div>
@@ -44,45 +44,7 @@
         </a>
       </div>
       @endforeach
-      {{-- <div class="col-md-6 col-lg-4">
-        <a href="{{Route('product-detail')}}" class="media-1" data-fancybox="gallery">
-          <img src="{{('public/frontend/images/img_3.jpg')}}" alt="Image" class="img-fluid">
-          <div class="media-1-content">
-            <h2>Fruits</h2>
-            <span class="category">Website</span>
-          </div>
-        </a>
-      </div>
-
-      <div class="col-md-6 col-lg-4">
-        <a href="{{('public/frontend/images/img_4.jpg')}}" class="media-1" data-fancybox="gallery">
-          <img src="{{('public/frontend/images/img_4.jpg')}}" alt="Image" class="img-fluid">
-          <div class="media-1-content">
-            <h2>Design Material</h2>
-            <span class="category">Web Application</span>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <a href="{{('public/frontend/images/img_5.jpg')}}" class="media-1" data-fancybox="gallery">
-          <img src="{{('public/frontend/images/img_5.jpg')}}" alt="Image" class="img-fluid">
-          <div class="media-1-content">
-            <h2>Handy Food</h2>
-            <span class="category">Branding</span>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <a href="{{('public/frontend/images/img_6.jpg')}}" class="media-1" data-fancybox="gallery">
-          <img src="{{('public/frontend/images/img_6.jpg')}}" alt="Image" class="img-fluid">
-          <div class="media-1-content">
-            <h2>Cat With Cup</h2>
-            <span class="category">Website</span>
-          </div>
-        </a>
-      </div>
-
- --}}
+      
     </div>
     {{$new_product->links()}}
   </div>
@@ -92,7 +54,7 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-md-8 text-center">
-        <h2 class="text-black h1 site-section-heading text-center">Testimonials</h2>
+        <h2 class="text-black h1 site-section-heading text-center">{{__('user.our team')}}</h2>
       </div>
     </div>
   </div>
@@ -101,12 +63,12 @@
       <div class="testimonial">
 
         <blockquote class="mb-5">
-          <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
+         <p>&ldquo;Chúng tôi khuyến khích mỗi đội nhóm và từng thành viên tự thách thức bản thân để phát huy tất cả những tiềm năng của bản thân thông kỹ năng của một lập trình viên và coi đó là một thế mạnh để phát triển công ty.&rdquo;</p>
         </blockquote>
 
-        <figure class="mb-4 d-flex align-items-center justify-content-center">
-          <div><img src="{{('public/frontend/images/person_3.')}}jpg" alt="Image" class="w-50 img-fluid mb-3"></div>
-          <p>John Smith</p>
+        <figure class="mb-4 align-items-center justify-content-center">
+          <div><img src="{{('public/frontend/images/team1.jpg')}}" alt="Image" class="img-fluid mb-3"></div>
+          <p>Tuyên Nguyễn</p>
         </figure>
       </div>
     </div>
@@ -114,27 +76,12 @@
       <div class="testimonial">
 
         <blockquote class="mb-5">
-          <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
+          <p>&ldquo;Khi bạn tin bạn làm được hay không làm được thì bạn đều đúng.&rdquo;</p>
         </blockquote>
-        <figure class="mb-4 d-flex align-items-center justify-content-center">
-          <div><img src="{{('public/frontend/images/person_2.')}}jpg" alt="Image" class="w-50 img-fluid mb-3"></div>
-          <p>Christine Aguilar</p>
+        <figure class="mb-4 align-items-center justify-content-center">
+          <div><img src="{{('public/frontend/images/team2.jpg')}}" alt="Image" class="img-fluid mb-3"></div>
+          <p>Thiện Warren</p>
         </figure>
-
-      </div>
-    </div>
-
-    <div>
-      <div class="testimonial">
-
-        <blockquote class="mb-5">
-          <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
-        </blockquote>
-        <figure class="mb-4 d-flex align-items-center justify-content-center">
-          <div><img src="{{('public/frontend/images/person_4.')}}jpg" alt="Image" class="w-50 img-fluid mb-3"></div>
-          <p>Robert Spears</p>
-        </figure>
-
 
       </div>
     </div>
@@ -143,12 +90,13 @@
       <div class="testimonial">
 
         <blockquote class="mb-5">
-          <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
+          <p>&ldquo;Khách hàng của chúng tôi là người duy nhất quyết định giá trị của hàng hóa và dịch vụ của chúng tôi. Chúng tôi cố gắng đáp ứng những nhu cầu chưa được đáp ứng và những dịch vụ chưa được phục vụ.&rdquo;</p>
         </blockquote>
-        <figure class="mb-4 d-flex align-items-center justify-content-center">
-          <div><img src="{{('public/frontend/images/person_5.')}}jpg" alt="Image" class="w-50 img-fluid mb-3"></div>
-          <p>Bruce Rogers</p>
+        <figure class="mb-4 align-items-center justify-content-center">
+          <div><img src="{{('public/frontend/images/team3.png')}}" alt="Image" class="img-fluid mb-3"></div>
+          <p>Dưỡng Phạm</p>
         </figure>
+
 
       </div>
     </div>
@@ -160,7 +108,7 @@
   <div class="container">
     <div class="row justify-content-center mb-5">
       <div class="col-md-8 text-center" data-aos="fade-up">
-        <h2 class="text-black h1 site-section-heading text-center">Our Services</h2>
+        <h2 class="text-black h1 site-section-heading text-center">{{__('user.services')}}</h2>
       </div>
     </div>
     <div class="row align-items-stretch">
@@ -168,61 +116,31 @@
         <div class="unit-4 d-flex">
           <div class="unit-4-icon mr-4"><span class="text-primary icon-laptop2"></span></div>
           <div>
-            <h3>Web Design</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-            <p><a href="#">Learn More</a></p>
+            <h3>Phát triển hệ thống web</h3>
+            <p>Chúng tôi có kinh nghiệm trong phát triển và vận hành hệ thống Web thi trực tuyến, phần mềm quản lý thuế, quản lý nhân sự,... với quy mô hàng triệu người dùng và có sự hiểu biết sâu rộng về kĩ thuật, sử dụng các ngôn ngữ lập trình: PHP, Java, .NET, Javascript</p>
+           
           </div>
         </div>
       </div>
-      <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
-        <div class="unit-4 d-flex">
-          <div class="unit-4-icon mr-4"><span class="text-primary icon-shopping_cart"></span></div>
-          <div>
-            <h3>eCommerce</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-            <p><a href="#">Learn More</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
-        <div class="unit-4 d-flex">
-          <div class="unit-4-icon mr-4"><span class="text-primary icon-question_answer"></span></div>
-          <div>
-            <h3>Web Applications</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-            <p><a href="#">Learn More</a></p>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="300">
-        <div class="unit-4 d-flex">
-          <div class="unit-4-icon mr-4"><span class="text-primary icon-format_paint"></span></div>
-          <div>
-            <h3>Branding</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-            <p><a href="#">Learn More</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="400">
-        <div class="unit-4 d-flex">
-          <div class="unit-4-icon mr-4"><span class="text-primary icon-extension"></span></div>
-          <div>
-            <h3>Copy Writing</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-            <p><a href="#">Learn More</a></p>
-          </div>
-        </div>
-      </div>
+     
       <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="500">
         <div class="unit-4 d-flex">
           <div class="unit-4-icon mr-4"><span class="text-primary icon-phonelink"></span></div>
           <div>
-            <h3>Mobile Applications</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-            <p><a href="#">Learn More</a></p>
+            <h3>Phát triển mobile</h3>
+            <p>Với những dev có kinh nghiệm 4~5 năm trong lĩnh vực phát triển mobile (iOS,Android), chúng tôi đang tiến hành phát triển nhiều app mobile.</p>
+          
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="400">
+        <div class="unit-4 d-flex">
+          <div class="unit-4-icon mr-4"><span class="text-primary icon-extension"></span></div>
+          <div>
+            <h3>Phát triển trò chơi</h3>
+            <p>Chúng tôi có kinh nghiệm phát triển và vận hành game và có thể linh hoạt theo quy mô dự án mở rộng hay thu nhỏ. (Ngôn ngữ lập trình: Unity, Html5)</p>
+         
           </div>
         </div>
       </div>
@@ -231,113 +149,10 @@
   </div>
 </section>
 
-<div class="site-section" id="about-section">
-  <div class="container">
-    <div class="row mb-5">
-
-      <div class="col-md-5 ml-auto mb-5 order-md-2" data-aos="fade">
-        <img src="{{('public/frontend/images/about_1.j')}}pg" alt="Image" class="img-fluid rounded">
-      </div>
-      <div class="col-md-6 order-md-1" data-aos="fade">
-
-        <div class="row">
-
-          <div class="col-12">
-            <div class="text-left pb-1">
-              <h2 class="text-black h1 site-section-heading">{{__('user.about-us')}}</h2>
-            </div>
-          </div>
-          <div class="col-12 mb-4">
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet incidunt magnam corrupti, odit eos harum quaerat nostrum voluptatibus aspernatur eligendi accusantium cum, impedit blanditiis voluptate commodi doloribus, nemo dignissimos recusandae.</p>
-          </div>
-          <div class="col-md-12 mb-md-5 mb-0 col-lg-6">
-            <div class="unit-4">
-              <div class="unit-4-icon mr-4 mb-3"><span class="text-secondary icon-phonelink"></span></div>
-              <div>
-                <h3>Web &amp; Mobile Specialties</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis consect.</p>
-                <p class="mb-0"><a href="#">Learn More</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-12 mb-md-5 mb-0 col-lg-6">
-            <div class="unit-4">
-              <div class="unit-4-icon mr-4 mb-3"><span class="text-secondary icon-extension"></span></div>
-              <div>
-                <h3>Intuitive Thinkers</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis.</p>
-                <p class="mb-0"><a href="#">Learn More</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-
-<div class="site-section border-bottom" id="team-section">
-  <div class="container">
-    <div class="row justify-content-center mb-5">
-      <div class="col-md-7 text-center">
-        <h2 class="text-black h1 site-section-heading">{{__('user.our team')}}</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
-        <div class="person text-center">
-          <img src="{{('public/frontend/images/person_2.')}}jpg" alt="Image" class="img-fluid rounded-circle w-50 mb-5">
-          <h3>John Rooster</h3>
-          <p class="position text-muted">Co-Founder, President</p>
-          <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi at consequatur unde molestiae quidem provident voluptatum deleniti quo iste error eos est praesentium distinctio cupiditate tempore suscipit inventore deserunt tenetur.</p>
-          <ul class="ul-social-circle">
-            <li><a href="#"><span class="icon-facebook"></span></a></li>
-            <li><a href="#"><span class="icon-twitter"></span></a></li>
-            <li><a href="#"><span class="icon-linkedin"></span></a></li>
-            <li><a href="#"><span class="icon-instagram"></span></a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="200">
-        <div class="person text-center">
-          <img src="{{('public/frontend/images/person_3.')}}jpg" alt="Image" class="img-fluid rounded-circle w-50 mb-5">
-          <h3>Tom Sharp</h3>
-          <p class="position text-muted">Co-Founder, COO</p>
-          <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi at consequatur unde molestiae quidem provident voluptatum deleniti quo iste error eos est praesentium distinctio cupiditate tempore suscipit inventore deserunt tenetur.</p>
-          <ul class="ul-social-circle">
-            <li><a href="#"><span class="icon-facebook"></span></a></li>
-            <li><a href="#"><span class="icon-twitter"></span></a></li>
-            <li><a href="#"><span class="icon-linkedin"></span></a></li>
-            <li><a href="#"><span class="icon-instagram"></span></a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="300">
-        <div class="person text-center">
-          <img src="{{('public/frontend/images/person_4.')}}jpg" alt="Image" class="img-fluid rounded-circle w-50 mb-5">
-          <h3>Winston Hodson</h3>
-          <p class="position text-muted">Marketing</p>
-          <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi at consequatur unde molestiae quidem provident voluptatum deleniti quo iste error eos est praesentium distinctio cupiditate tempore suscipit inventore deserunt tenetur.</p>
-          <ul class="ul-social-circle">
-            <li><a href="#"><span class="icon-facebook"></span></a></li>
-            <li><a href="#"><span class="icon-twitter"></span></a></li>
-            <li><a href="#"><span class="icon-linkedin"></span></a></li>
-            <li><a href="#"><span class="icon-instagram"></span></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
 
 <section class="site-section bg-light" id="contact-section">
   <div class="container">
-    <div class="row mb-5">
+    <div class="row pt-2">
       <div class="col-12 text-center">
         <h2 class="text-black h1 site-section-heading">{{__('user.contact')}}</h2>
       </div>
@@ -345,49 +160,45 @@
     <div class="row">
       <div class="col-md-7 mb-5">
 
+        <form role="form" action="{{Route('admin.save-contact')}}" class="p-5 bg-white" method="post" enctype="multipart/form-data">
+           {{ csrf_field() }} 
+  
 
-
-        <form action="#" class="p-5 bg-white">
-
-          <h2 class="h4 text-black mb-5">Contact Form</h2> 
+          <h2 class="h4 text-black mb-5">{{__('user.contact-form')}}</h2> 
 
           <div class="row form-group">
-            <div class="col-md-6 mb-3 mb-md-0">
-              <label class="text-black" for="fname">First Name</label>
-              <input type="text" id="fname" class="form-control">
-            </div>
-            <div class="col-md-6">
-              <label class="text-black" for="lname">Last Name</label>
-              <input type="text" id="lname" class="form-control">
+            <div class="col-md-12">
+              <label class="text-black" for="lname">{{__('user.name')}}</label>
+              <input type="text" id="lname" name="name" class="form-control">
             </div>
           </div>
 
           <div class="row form-group">
 
             <div class="col-md-12">
-              <label class="text-black" for="email">Email</label> 
-              <input type="email" id="email" class="form-control">
+              <label class="text-black" for="email">{{__('user.email')}}</label> 
+              <input type="email" id="email" name="email" class="form-control">
             </div>
           </div>
 
           <div class="row form-group">
 
             <div class="col-md-12">
-              <label class="text-black" for="subject">Subject</label> 
-              <input type="subject" id="subject" class="form-control">
+              <label class="text-black" for="subject">{{__('user.phone-number')}}</label> 
+              <input type="subject" id="subject" name="phone" class="form-control">
             </div>
           </div>
 
           <div class="row form-group">
             <div class="col-md-12">
-              <label class="text-black" for="message">Message</label> 
-              <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Write your notes or questions here..."></textarea>
+              <label class="text-black" for="message">{{__('user.message')}}</label> 
+              <textarea name="question" id="message" cols="30" rows="7" class="form-control" placeholder={{__('user.write')}}></textarea>
             </div>
           </div>
 
           <div class="row form-group">
             <div class="col-md-12">
-              <input type="submit" value="Send Message" class="btn btn-primary btn-md text-white">
+              <input type="submit" value="{{__('user.send-message')}}" class="btn btn-primary btn-md text-white">
             </div>
           </div>
 
@@ -397,13 +208,13 @@
       <div class="col-md-5">
 
         <div class="p-4 mb-3 bg-white">
-          <p class="mb-0 font-weight-bold">Address</p>
-          <p class="mb-4">203 Fake St. Mountain View, San Francisco, California, USA</p>
+          <p class="mb-0 font-weight-bold">{{__('user.address')}}</p>
+          <p class="mb-4">Tầng 2, tòa C2, Vinaconex1, số 289A, Khuất Duy Tiến, Trung Hòa, Cầu Giấy, Hà Nội</p>
 
-          <p class="mb-0 font-weight-bold">Phone</p>
-          <p class="mb-4"><a href="#">+1 232 3235 324</a></p>
+          <p class="mb-0 font-weight-bold">{{__('user.phone')}}</p>
+          <p class="mb-4"><a href="#">0986 533 386</a></p>
 
-          <p class="mb-0 font-weight-bold">Email Address</p>
+          <p class="mb-0 font-weight-bold">{{__('user.email-address')}}</p>
           <p class="mb-0"><a href="#">youremail@domain.com</a></p>
 
 

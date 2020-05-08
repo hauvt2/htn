@@ -6,15 +6,16 @@
         <div class="row">
           <div class="col-md-5">
             <h2 class="footer-heading mb-4">{{__('user.about-us')}}</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facere laudantium magnam voluptatum autem. Amet aliquid nesciunt veritatis aliquam.</p>
+            <p>HTNSOFT là một công ty công nghệ, nhắm đến bất kỳ ai tò mò về công nghệ trong thương mại điện tử. Tham gia với chúng tôi để nói chuyện, thảo luận nhóm, bootcamp và tìm hiểu sâu về các chủ đề công nghệ đầy thách thức!</p>
           </div>
           <div class="col-md-3 ml-auto">
             <h2 class="footer-heading mb-4">{{__('user.feature')}}</h2>
             <ul class="list-unstyled">
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Testimonials</a></li>
-              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">{{__('user.product')}}</a></li>
+              <li><a href="#">{{__('user.services')}}</a></li>
+              <li><a href="#">{{__('user.our-team')}}</a></li>
+              <li><a href="#">{{__('user.contact')}}</a></li>
+              <li><a href="#">{{__('user.blog')}}</a></li>
             </ul>
           </div>
           <div class="col-md-3">
@@ -38,9 +39,9 @@
         </form>
       </div>
     </div>
-    <div class="row pt-5 mt-5 text-center">
+    <div class="row pt-3 mt-3 text-center">
       <div class="col-md-12">
-        <div class="border-top pt-5">
+        <div class="border-top pt-3">
           <p>
             Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made with by <a href="https://htnsoft.com" target="_blank" >HtnCorp<span class="text-danger">.</span> </a></a>
           </p>

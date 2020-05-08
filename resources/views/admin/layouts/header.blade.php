@@ -277,147 +277,16 @@
             </p>
           </a>
         </li>
-        <li class="nav-item">
-          <a href="" class="nav-link">
-            <i class="fas fa-comment-dots"></i>
-            <p>
-             Quản lý bình luận
-           </p>
-         </a>
-       </li>
        
        <li class="nav-item">
-        <a href="" class="nav-link">
-          <i class="fas fa-comment-medical"></i>
+        <a href="{{route('admin.all-contact')}}" class="nav-link">
+         <i class="fas fa-phone-square-alt"></i>
           <p>
-            Phản hồi khách hàng
+            Liên hệ
           </p>
         </a>
       </li>
-
-      <li class="nav-item has-treeview">
-        <a href="#" class="nav-link">
-          <i class="nav-icon fas fa-edit"></i>
-          <p>
-            Quản lý công việc
-            <i class="fas fa-angle-left right"></i>
-          </p>
-        </a>
-        <ul class="nav nav-treeview">
-          <li class="nav-item">
-            <a href="" class="nav-link">
-              <i class="far fa-circle nav-icon"></i>
-              <p>Thêm mới công việc</p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="" class="nav-link">
-              <i class="far fa-circle nav-icon"></i>
-              <p>Danh sách công việc</p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="" class="nav-link">
-              <i class="far fa-circle nav-icon"></i>
-              <p>Báo cáo công việc</p>
-            </a>
-          </li>
-        </ul>
-      </li>
-      <li class="nav-item has-treeview">
-        <a href="#" class="nav-link">
-          <i class="nav-icon fas fa-table"></i>
-          <p>
-            Quản lý tài liệu
-            <i class="fas fa-angle-left right"></i>
-          </p>
-        </a>
-        <ul class="nav nav-treeview">
-          <li class="nav-item">
-            <a href="" class="nav-link">
-              <i class="far fa-circle nav-icon"></i>
-              <p>Danh sách tài liệu</p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="" class="nav-link">
-              <i class="far fa-circle nav-icon"></i>
-              <p>Thêm mới tài liệu</p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="" class="nav-link">
-              <i class="far fa-circle nav-icon"></i>
-              <p>Danh mục tài liệu</p>
-            </a>
-          </li>
-        </ul>
-      </li>
-      <li class="nav-item has-treeview">
-        <a href="#" class="nav-link">
-          <i class="nav-icon fas fa-users"></i>
-          <p>
-            Quản lý người dùng
-            <i class="fas fa-angle-left right"></i>
-          </p>
-        </a>
-        <ul class="nav nav-treeview">
-          <li class="nav-item">
-            <a href="{{route('admin.manage-users')}}" class="nav-link">
-              <i class="far fa-circle nav-icon"></i>
-              <p>Danh sách tài khoản</p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="{{route('admin.create-users')}}" class="nav-link">
-              <i class="far fa-circle nav-icon"></i>
-              <p>Thêm mới tài khoản</p>
-            </a>
-          </li>
-        </ul>
-      </li>
-      <li class="nav-item has-treeview">
-        <a href="#" class="nav-link">
-          <i class="fab fa-ubuntu"></i>
-          <p>
-            Danh mục hệ thống
-            <i class="fas fa-angle-left right"></i>
-          </p>
-        </a>
-        <ul class="nav nav-treeview">
-          <li class="nav-item">
-            <a href="pages/tables/simple.html" class="nav-link">
-              <i class="far fa-circle nav-icon"></i>
-              <p>Quản lý phòng ban</p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="pages/tables/data.html" class="nav-link">
-              <i class="far fa-circle nav-icon"></i>
-              <p>Quản lý chức danh</p>
-            </a>
-          </li>
-        </ul>
-      </li>
-      <li class="nav-header">LABELS</li>
-      <li class="nav-item">
-        <a href="#" class="nav-link">
-          <i class="nav-icon far fa-circle text-danger"></i>
-          <p class="text">Quan trọng</p>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a href="#" class="nav-link">
-          <i class="nav-icon far fa-circle text-warning"></i>
-          <p>Cảnh báo</p>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a href="#" class="nav-link">
-          <i class="nav-icon far fa-circle text-info"></i>
-          <p>Thông tin</p>
-        </a>
-      </li>
+      
       <li class="nav-header"></li>
     </ul>
   </nav>

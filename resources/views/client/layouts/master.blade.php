@@ -51,7 +51,7 @@
   </div> 
   <!-- end site content -->
 
-  <a class="scrollToTop" title="Lên đầu trang"><i style="color:#fff;" class="far fa-arrow-alt-circle-up"></i></a>
+  <a class="scrollToTop " title="Lên đầu trang"><i style="color:#fff;" class="fa fa-arrow-up"></i></a>
  
   <script src="{{('public/frontend/js/swiper.min.js')}}"></script>
   <script src="{{('public/frontend/js/jquery-3.3.1.min.js')}}"></script>
@@ -72,7 +72,7 @@
   <script src="{{('public/frontend/js/typed.js')}}"></script>
   <script>
     var typed = new Typed('.typed-words', {
-      strings: ["Web Apps"," WordPress"," Mobile Apps"],
+      strings: ["Web Apps"," Mobile Apps"],
       typeSpeed: 80,
       backSpeed: 80,
       backDelay: 4000,

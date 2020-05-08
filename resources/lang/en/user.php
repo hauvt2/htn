@@ -14,6 +14,7 @@ return [
     */
 
     'home' => 'Home',
+    'phone'=>'Phone',
     'product' => 'Product',
     'work' => 'Work',
     'services' => 'Services',
@@ -21,7 +22,7 @@ return [
     'our-team' => 'Our Team',
     'contact' => 'Contact',
     'language' => 'Language',
-    'contact' => 'Liên Hệ',
+    'contact' => 'Contact',
     'blog' => 'Blog',
     'news' => 'News',
     'about-us' => 'About Us',
@@ -29,10 +30,20 @@ return [
     'sub' => 'Subcribe Newletter',
     'enter-email' => 'Enter email',
     'send' => 'Send',
-    'email'=>'Email',
-    'phone'=>'Phone',
+    
     'our products'=>'Our Products',
     'our team'=>'Our Team',
+    'contact-form'=>'Contact Form',
+    'name'=>'Full name',
+    'email'=>'Email',
+    'phone-number'=>'Phone Number',
+    'message'=>'Message',
+    'write'=>'Write your notes or questions here...',
+    'send-message'=>'SEND MESSAGE',
+     'address'=>'Address',
+    'email-address'=>'Email Address',
+
+
     'search'=>'Search',
     'search-key'=>"Search keyword",
     'watch-video'=>'WATCH VIDEO',

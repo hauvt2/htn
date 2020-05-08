@@ -18,15 +18,15 @@ Route::group(['prefix'=>'/','middleware'=>['localization']],function(){
 	 // ------------------Authentication-----------------------------
 	
 	Route::get('/','HomeController@Home')->name('home');
-
-
-	Route::get('/blog','BlogController@index')->name('blog');
-	Route::get('/single-blog','SingleBlogController@index')->name('single-blog');
+	
 	Route::get('product-detail','ProductController@index')->name('product-detail');
-
 	Route::get('/blog','BlogController@index')->name('blog');
-	Route::get('/single-blog','BlogController@index')->name('single-blog');
+	
+	Route::get('single-blog/{id}','BlogController@detail')->name('single-blog');	
 
+	Route::post('comment','BlogController@CmtBlog')->name('cmt-blog');
+	Route::post('/','BlogController@deleteCmt')->name('delete-cmt');
+	
 	Route::get('/admin','UserController@Login')->name('login')->middleware('checkLogout');
 	Route::post('/login','UserController@getLogin')->name('getLogin');
 	Route::get('/logout','UserController@Logout')->name('logout');
@@ -37,7 +37,7 @@ Route::group(['prefix'=>'/','middleware'=>['localization']],function(){
 
 });
 
-
+// Route::get('/them-moi-danh-muc-tin-tuc','AdminController@NewsCate')->name('admin.news-cate');
 
 // -------------------------Admin Panel--------------------------------------------------
 Route::group(['prefix'=>'admin','as'=>'admin.','middleware'=>['checkLogin','localization']],function(){
@@ -77,6 +77,11 @@ Route::group(['prefix'=>'admin','as'=>'admin.','middleware'=>['checkLogin','loca
 	Route::post('cap-nhat-san-pham','ProjectController@updateProject')->name('update-project');
 	Route::get('xóa-san-pham/{id}','ProjectController@deleteProject')->name('delete-project');
 
+	
+	Route::get('danh-sach-lien-he','AdminController@AllContact')->name('all-contact');
+	Route::post('luu-lien-he','AdminController@SaveContact')->name('save-contact');
+	
+
 
 	// //-----------------------------Quản lý danh mục sản phẩm---------- 
 	// Route::get('/danh-sach-danh-muc','AdminController@ListCate')->name('list-cate');
@@ -89,9 +94,4 @@ Route::group(['prefix'=>'admin','as'=>'admin.','middleware'=>['checkLogin','loca
 });
 
 
-Route::get('hocsinh', 'HocsinhController@index'); // Hiển thị danh sách học sinh
-Route::get('hocsinh/create', 'HocsinhController@create'); // Thêm mới học sinh
-Route::post('hocsinh/create', 'HocsinhController@store'); // Xử lý thêm mới học sinh
-Route::get('hocsinh/{id}/edit', 'HocsinhController@edit'); // Sửa học sinh
-Route::post('hocsinh/update', 'HocsinhController@update'); // Xử lý sửa học sinh
-Route::get('hocsinh/{id}/delete', 'HocsinhController@destroy'); // Xóa học sinh
+

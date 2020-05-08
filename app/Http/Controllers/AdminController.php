@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use App\Models\Users;
 use App\Models\News;
+use App\Models\Feedback;
 use App\Models\NewsTypes;
 use Hash;
 use Session;
@@ -177,6 +178,27 @@ public function deleteNews($id){
         News::where('id', $id)->delete();
         return redirect()->back()->with('edit-success', 'Xóa thành công');
     
+    }
+// =====================contact controller===============
+
+ public function AllContact(){
+        $contact1 = Feedback::paginate(5);
+        return view('admin.contact.all-contact',compact('contact1'));
+    }
+
+  
+    public function SaveContact(Request $req){
+
+        $query = Feedback::create($req->all());
+        return redirect()->back()->with('success','Gửi thành công');
+
+        // $data = new NewsTypes();
+
+        // $data->name = $req->name;
+        // $data->status = $req->status;
+        // $data->status = $req->status;
+        // $data->save();
+
     }
 
 }

@@ -7,36 +7,31 @@
         <div class="site-mobile-menu-body"></div>
       </div>
 
-      <div class="top-bar py-1" id="home-section">
+      <div class="top-bar" id="home-section">
         <div class="container">
           <div class="row">
             <div class="col-md-6">
-              <p class="mb-0">
-                <span class="mr-3"><strong class="text-dark">{{__('user.phone')}}:</strong> <a href="tel://#">0978888686</a></span>
-                <span><strong class="text-dark">{{__('user.email')}}:</strong> <a href="#">info@yourdomain.com</a></span>
+              <p class="mb-0" style="font-size: 14px!important">
+                <span class="mr-3"><i class="fas fa-phone-square-alt"></i> <a href="tel://#">0986 533 386</a></span>
+                <span><i class="far fa-envelope"></i> <a href="#">info@yourdomain.com</a></span>
               </p>
             </div>
             <div class="col-md-6">
-              <ul class="social-media">
+              <ul class="social-media" style="font-size: 15px">
                 <li><a href="#" class="p-2"><span class="icon-facebook"></span></a></li>
-                <li><a href="#" class="p-2"><span class="icon-twitter"></span></a></li>
+                <li><a href="#" class="p-2"><i class="fab fa-youtube"></i></a></li>
                 <li><a href="#" class="p-2"><span class="icon-instagram"></span></a></li>
-                <li><a href="#" class="p-2"><span class="icon-linkedin"></span></a></li>
-
+                <li><a href="#" class="p-2"><span class="icon-twitter"></span></a></li>
+                            
                 <li class="dropdown dropdown-primary">
-                  <button class="btn btn-light dropdown-toggle" type="button " data-toggle="dropdown">{{__('user.language')}}
+                  <button class="btn btn-light dropdown-toggle" style="border-radius: 0px!important;  line-height: 0.5em!important; font-size: 14px!important;" type="button " data-toggle="dropdown">{{__('user.language')}}
                     <span class="caret"></span></button>
-                    <ul class="dropdown-menu"> 
-                      <li style="display: block!important;"><a href="{!! route('change-language', ['en']) !!}"><img src="public/frontend/images/EN-flag.png"> EN</a></li>
-                      <li style="display: block!important;"><a href="{!! route('change-language', ['vn']) !!}"><img src="public/frontend/images/VN-flag.png"> VN</a></li>
+                    <ul class="dropdown-menu" style="min-width: 7rem!important; padding: 0!important">
+                      <li style="display: block!important;"><a href="{!! route('change-language', ['vn']) !!}"><img src="public/frontend/images/VN-flag.png"> Viet Nam</a></li> 
+                      <li style="display: block!important;"><a href="{!! route('change-language', ['en']) !!}"><img src="public/frontend/images/EN-flag.png"> English</a></li>
                     </ul>
-                  </li>
-                  {{-- <select class="selectpicker" data-width="fit"> chọn
-                    <option class="form-control" hidden>Chọn ngôn ngữ</option>
-                    <option>VN qwqd <img src="public/frontend/images/VN-flag.png"></option>
-                    <option data-thumbnail="https://glot.io/static/img/c.svg?etag=ZaoLBh_p">EN</option>
-                  </select> --}}
-                </ul>
+                </li>   
+              </ul>
 
             </div>
           </div>
@@ -81,7 +76,7 @@
                     <ul class="dropdown">
 
                       <li><a href="#team-section">{{__('user.our-team')}}</a></li>
-                      <li><a href="{{Route('single-blog')}}">{{__('user.contact')}}</a></li>
+                      <li><a href="">{{__('user.contact')}}</a></li>
                     </ul>
                   </li>
                   <li><a href="{{Route('blog')}}" class="nav-link">{{__('user.news')}}</a></li>

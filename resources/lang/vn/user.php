@@ -14,7 +14,7 @@ return [
     */
 
     'home' => 'Trang Chủ',
-
+    'phone'=>'SĐT',
     'product' => 'Sản Phẩm',
 
     'work' => 'Công Việc',
@@ -23,7 +23,7 @@ return [
     'about' => 'Về Chúng Tôi',
     'our-team' => 'Đội Ngũ',
     'contact' => 'Liên Hệ',
-    'blog' => 'Blog',
+    'blog' => 'Tin tức',
     'news' => 'Tin tức',
     'language' => 'Ngôn Ngữ',
 
@@ -32,12 +32,22 @@ return [
     'sub' => 'Đăng Ký Nhận Tin',
     'enter-email' => 'Nhập email',
     'send' => 'Gửi',
-    'email'=>'Email',
-    'phone'=>'SĐT',
+    
     'our products'=>'Sản phẩm của chúng tôi',
     'our team'=>'Đội ngũ của chúng tôi',
+    'contact-form'=>'Mẫu Liên Hệ',
+    'name'=>'Họ và Tên',
+    'email'=>'Email',
+    'phone-number'=>'Số Điện Thoại',
+    'message'=>'Nội Dung',
+    'write'=>'Nhập nội dung...',
+    'send-message'=>'GỬI TIN NHẮN',
+    'address'=>'Địa Chỉ',
+    'email-address'=>'Địa Chỉ Email',
+
+
     'search'=>'Tìm Kiếm',
     'search-key'=>'Nhập từ khóa',
     'watch-video'=>'XEM VIDEO',
-      'feature'=>'Danh Mục',
+    'feature'=>'Danh Mục',
 ];

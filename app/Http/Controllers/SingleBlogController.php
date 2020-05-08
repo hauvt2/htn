@@ -8,6 +8,6 @@ class SingleBlogController extends Controller
 {
     public function index()
     {
-        return view('clients.news.detail');
+        return view('client.news.detail');
     }
 }

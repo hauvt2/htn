@@ -62,9 +62,7 @@
                   <th colspan="1" style="text-align: center;">Tiêu đề</th>
                   <th colspan="1" style="text-align: center;">Tóm tắt</th>
                   <th colspan="1" style="text-align: center;">Ảnh</th>
-                
                   <th colspan="1" style="text-align: center;">Lượt xem</th>                
-                  
                   <th colspan="1" style="text-align: center;">Trạng thái</th>
                   <th colspan="2" style="text-align: center;">Thao tác</th>
                   
