@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th5 05, 2020 lúc 11:03 AM
+-- Thời gian đã tạo: Th5 11, 2020 lúc 12:16 PM
 -- Phiên bản máy phục vụ: 10.4.11-MariaDB
 -- Phiên bản PHP: 7.4.3
 
@@ -32,13 +32,22 @@ CREATE TABLE `feedback` (
   `id` int(11) NOT NULL,
   `name` varchar(250) COLLATE utf8_unicode_ci NOT NULL,
   `email` varchar(250) COLLATE utf8_unicode_ci NOT NULL,
+  `phone` int(11) DEFAULT NULL,
   `question` text COLLATE utf8_unicode_ci NOT NULL,
-  `answer` text COLLATE utf8_unicode_ci NOT NULL,
-  `answered_by` int(11) NOT NULL,
+  `answer` text COLLATE utf8_unicode_ci DEFAULT NULL,
+  `answered_by` int(11) DEFAULT NULL,
   `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
   `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
-  `status` int(11) NOT NULL
+  `status` int(11) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Đang đổ dữ liệu cho bảng `feedback`
+--
+
+INSERT INTO `feedback` (`id`, `name`, `email`, `phone`, `question`, `answer`, `answered_by`, `updated_at`, `created_at`, `status`) VALUES
+(1, 'hau', 'hau260797@gmail.com', 382407546, 'ggff', NULL, NULL, '2020-05-06 21:28:39', '2020-05-06 21:28:39', 0),
+(2, 'hau1', 'hau260797@gmail.com', 382407546, 'tà lăng', NULL, NULL, '2020-05-06 21:34:54', '2020-05-06 21:34:54', 0);
 
 -- --------------------------------------------------------
 
@@ -66,15 +75,11 @@ CREATE TABLE `news` (
 --
 
 INSERT INTO `news` (`id`, `title`, `summary`, `content`, `images`, `highlight`, `views`, `id_type`, `id_user`, `status`, `created_at`, `updated_at`) VALUES
-(10, '333301234', '3333', '<p>3333</p>', 'Dl8d_funny face cat.PNG', 1, 0, 5, 1, 0, '2020-04-27 21:24:28', '2020-05-04 02:14:33'),
-(13, '333', '3333', '<p>333</p>', '3lse_funny face cat.PNG', NULL, 0, 4, 1, 1, '2020-04-27 22:00:37', '2020-04-27 22:00:37'),
-(14, 'cong nge  766', 'ểfgghhh', '<p>errr</p>', 'cTRx_cat fun.PNG', 1, 0, 6, 1, 1, '2020-04-27 22:03:36', '2020-05-04 01:29:23'),
+(10, '333301234', '3333', '<p>3333</p>', 'Dl8d_funny face cat.PNG', 1, 73, 5, 1, 0, '2020-04-27 21:24:28', '2020-05-08 04:24:22'),
+(13, '333', '3333', '<p>333</p>', '3lse_funny face cat.PNG', NULL, 0, 6, 1, 1, '2020-04-27 22:00:37', '2020-05-08 09:40:29'),
+(14, 'cong nge  766', 'ểfgghhh', '<p>errr</p>', 'cTRx_cat fun.PNG', 1, 1, 6, 1, 1, '2020-04-27 22:03:36', '2020-05-08 04:26:10'),
 (16, 'cong nge 2344', 'fdhdfjjf', '<p>dgfhdffj</p>\r\n\r\n<div id=\"eJOY__extension_root\" style=\"all:unset\">&nbsp;</div>', '7zst_find cat.PNG', 0, 0, 6, 1, 1, '2020-04-27 22:06:52', '2020-05-04 01:29:00'),
-(18, '3334', '3333', '<p>3333</p>', 'Vt4Z_cat fun.PNG', 1, 0, 4, 1, 0, '2020-04-29 20:11:53', '2020-04-29 20:11:53'),
-(19, '33334444', '3333', '<p>3333</p>', 'S9Kk_cat fun.PNG', 1, 0, 4, 1, 0, '2020-04-29 20:27:57', '2020-04-29 20:27:57'),
-(20, 'Công nghệ thời đại', '3333', '<p>3333</p>', '5Bu3_cat fun.PNG', 1, 0, 4, 1, 0, '2020-04-30 01:06:08', '2020-04-30 01:06:08'),
-(21, '33334444', '3333', '<p>3333</p>', 'izWv_black.png', 1, 0, 4, 1, 0, '2020-04-30 02:28:50', '2020-04-30 02:28:50'),
-(22, '1', '3333', '<p>3333</p>', 'o2fO_black.png', 1, 0, 4, 1, 0, '2020-04-30 02:38:07', '2020-04-30 02:38:07');
+(22, '1', '3333', '<p>3333</p>', 'o2fO_black.png', 1, 0, 5, 1, 0, '2020-04-30 02:38:07', '2020-05-08 09:40:54');
 
 -- --------------------------------------------------------
 
@@ -84,12 +89,21 @@ INSERT INTO `news` (`id`, `title`, `summary`, `content`, `images`, `highlight`, 
 
 CREATE TABLE `news_comments` (
   `id` int(11) NOT NULL,
-  `id_user` int(11) NOT NULL,
+  `name` text COLLATE utf8_unicode_ci NOT NULL,
   `id_news` int(11) NOT NULL,
   `content` text COLLATE utf8_unicode_ci NOT NULL,
+  `email` varchar(500) COLLATE utf8_unicode_ci NOT NULL,
   `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
   `created_at` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Đang đổ dữ liệu cho bảng `news_comments`
+--
+
+INSERT INTO `news_comments` (`id`, `name`, `id_news`, `content`, `email`, `updated_at`, `created_at`) VALUES
+(14, 'hà', 10, 'aaaasasaaaa', 'hau260797@gmail.com', '2020-05-07 21:04:30', '2020-05-07 21:04:30'),
+(15, 'bbbbbbbbbbbbbbbbbb', 10, 'bbbbbbbbbbbbbbbbbbbbbbbb', 'hau260797@gmail.com', '2020-05-07 21:06:34', '2020-05-07 21:06:34');
 
 -- --------------------------------------------------------
 
@@ -242,6 +256,12 @@ INSERT INTO `users` (`id`, `name`, `birth`, `email`, `phone`, `password`, `role`
 --
 
 --
+-- Chỉ mục cho bảng `feedback`
+--
+ALTER TABLE `feedback`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Chỉ mục cho bảng `news`
 --
 ALTER TABLE `news`
@@ -288,6 +308,12 @@ ALTER TABLE `users`
 --
 
 --
+-- AUTO_INCREMENT cho bảng `feedback`
+--
+ALTER TABLE `feedback`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
 -- AUTO_INCREMENT cho bảng `news`
 --
 ALTER TABLE `news`
@@ -297,7 +323,7 @@ ALTER TABLE `news`
 -- AUTO_INCREMENT cho bảng `news_comments`
 --
 ALTER TABLE `news_comments`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT cho bảng `news_types`
